@@ -6,8 +6,11 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-12.04
-  - name: centos-6.5
+  - name: windows-2012r2
+    driver_config:
+      box: Win2k12R2Core
+      box_url: file:///Users/cbbohano/vagrant-boxes/win2012core/Win2k12R2Core_C_D.box
+      vm_hostname: false
 
 suites:
   - name: default
